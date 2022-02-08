@@ -1,0 +1,18 @@
+.container{
+    border: 1px solid blue
+}
+
+.wrapper{
+    /* display: flex; */
+    height: 100px;
+    
+}
+.slider{
+    height: 100px;
+}
+
+.imgcontainer{
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
