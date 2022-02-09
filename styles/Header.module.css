@@ -1,0 +1,13 @@
+.container{
+    background-color: black;
+    display: flex;
+    align-items:center;
+    margin-top: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 9vh;
+    border-bottom: 1px solid black;
+    color: white;
+    font-size: 30px;
+    padding: 0 20px;
+    font-family: 'Sacramento', cursive;
+}

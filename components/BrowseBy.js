@@ -37,20 +37,15 @@ export const BrowseBy = () => {
         },
     ]
   return <div className={styles.container}>
-        <h2 className={styles.title}>Title</h2>
+        <h2 className={styles.title}>Trending Now</h2>
         <div className={styles.wrapper}>
             <div className={styles.slider}>
-                {Sample.map((item)=>{
-                    console.log(item.url);
+                {Sample.map((item)=>(
                     <div className = {styles.imgcontainer} key={item.id}>
-                        <Image 
-                         src = {`${item.url}`} layout = 'fill' objectFit = 'contain'
-                        />
-                        <p>
-                            {item.id}
-                        </p>
+                        <Image src = {`${item.url}`} layout = 'fill' objectFit = 'cover'/>
+                        {/* <p>{item.id}</p> */}
                     </div>
-                })}
+                ))}
             </div>
         </div>
       {/* Wrapper */}

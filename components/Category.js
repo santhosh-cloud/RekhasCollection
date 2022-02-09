@@ -1,11 +1,19 @@
 import React from 'react';
 import Image from 'next/image'
 import styles from '../styles/Category.module.css'
-export const Category = () => {
-  return <div>
+import Link from 'next/link';
+
+export const Category = ({name,url}) => {
+  return(
+    <Link href={`/categories/${name}`}>
+    <div className={styles.container}>
+      <h3>{name.toUpperCase()}</h3>
       <div className={styles.imgcontainer}>
-      <Image src="/img/1.jpg" layout='fill' objectFit='contain'/>
+        <Image src={url} layout='fill' objectFit='contain'/>
       </div>
-      <p>Category-Name</p>
-  </div>;
+      </div>
+    </Link>
+  )
+
+   
 };
